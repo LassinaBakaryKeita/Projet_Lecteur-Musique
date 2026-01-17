@@ -97,7 +97,7 @@ git clone https://github.com/ton-username/lecteur-de-musique.git
 
 ## 📸 Aperçu
 
-*(Tu peux ajouter ici une capture d’écran de ton projet plus tard)*
+<img width="854" height="775" alt="image" src="https://github.com/user-attachments/assets/f7d61646-94ee-4333-be5d-00514ccb3256" />
 
 ---
 
