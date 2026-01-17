@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lecteur de Musique</title>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--CSS Personalisé-->    
+        <link rel="stylesheet" href="style.css">
+
+        <!--SCRIPT Personalisé-->
+        <script src="script.js" defer></script>
+    </head>
+
+
+    <body>
+
+        <div class="card">
+
+            <!-- HEADER -->
+            <div class="container-header">
+                <i class="fa-solid fa-bars" id="menuListeMusic"></i>
+                <h2 class="titre">Play Music</h2>
+            </div>
+
+            <!-- IMAGE / COVER -->
+            <div class="container-carousel">
+                <img src="#" alt="cover"> 
+            </div>
+
+            <!-- PLAYLIST -->
+            <div class="playlist hidden" id="playlist">
+                <ul></ul>
+            </div>
+
+            <!-- TITRE MUSIQUE -->
+            <div>
+                <h3><span id="titreMusique">Only me and you</span></h3>
+            </div>
+
+            <!-- BARRE DE PROGRESSION -->
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+
+            <!--LE TIMING (POSITION ACTUELLE DE LA MUSIQUE-DUREE DE LA MUSIQUE)-->
+            <div class="container-timing">
+                <p>
+                    <span id="minuteCurrentDuration">0</span>:<span id="secondeCurrentDuration">00</span>
+                </p>
+
+                <p>
+                    <span id="minuteTotalDuration">3</span>:<span id="secondeTotalDuration">27</span>
+                </p>
+
+            </div>
+
+            <!-- BOUTONS -->
+            <div class="container-button">       
+
+                <button id="prev">
+                    <i class="fa-solid fa-backward"></i>
+                </button>
+
+                <!--  ICONE PAR DÉFAUT = PLAY -->
+                <button id="playPause">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+
+                <button id="next">
+                    <i class="fa-solid fa-forward"></i> 
+                </button>
+
+            </div>
+
+        </div>
+
+        <!--  AUDIO-->
+        <audio id="audio" preload="auto"></audio>
+
+    </body>
+</html>
